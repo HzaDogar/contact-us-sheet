@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbzCUq95qenCOSVZoE4gvnly9SdE3WFBFMWzAYLpLiNxXQXHWV4QnN8GX8E2BKG7aA2v/exec" name="contact-form">
+            <h4>Contact Us</h4>
+            <input type="text" name="your-name" placeholder="Name">
+            <input type="text" name="your-number" placeholder="Number">
+            <input type="email" name="your-email" placeholder="Email">
+            <textarea name="message" rows="7" placeholder="Your Message"></textarea>
+
+            <!-- Hidden input fields for IP address, city, and country -->
+            <input type="hidden" name="ipAddress" value="">
+            <input type="hidden" name="city" value="">
+            <input type="hidden" name="country" value="">
+
+            <div class="submit-container">
+                <button type="submit" id="submit">Submit</button>
+                <div class="loader"></div>
+            </div>
+            <div class="message-box">
+                <div class="message"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
